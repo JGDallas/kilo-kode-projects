@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: cleaned_sales
+    tests:
+      - unique:
+          column_name: id
+      - not_null:
+          column_name: amount
